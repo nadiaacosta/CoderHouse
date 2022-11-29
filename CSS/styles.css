@@ -1,0 +1,743 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+
+.logo {
+    width: 200px;
+    height: 130px;
+    margin-top: 12px;
+    margin-left: 30px;
+}
+
+
+header{
+    background-color: rgb(172, 123, 218);
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    color: aliceblue;
+    font-size: 25px;
+    
+    
+}
+
+.menu_navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+    font-size: 25px;
+}
+
+.nav_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu_responsive {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+@media(max-width:768px) {
+    .menu_responsive {
+        display: block;
+    }
+
+    .menu_responsive.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu_responsive.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu_responsive.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav_menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(172, 123, 218);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .item_nav {
+        margin: 16px 0;
+    }
+
+    .nav_menu.active {
+        left: 0;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+
+    .logo {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+}
+
+
+/* Fin del header */
+
+/* Pagina inicio */
+
+.conteinerInicio {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.imgn_titulo {
+    width: 230px;
+    height: 40px;
+}
+
+.conteinertituloYtexto {
+    display: block;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.tituloSobreNosotros {
+    font-size: 50px;
+    margin-top: 28px;
+}
+
+
+.textoSobreNosotros {
+    padding-top: 20px;
+    margin: 25px 25px;
+    
+}
+
+
+.video {
+    width: 650px;
+    height: 450px;
+    padding: 40px 20px;
+    margin-right: 30px;
+    
+}
+
+.img-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(7, 7, 7);
+    background-color: #03afff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-item:hover {
+ filter: opacity(0.9);
+ transform: scale(1.04);
+}
+
+.galeria_conteiner {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    justify-content: center;
+
+}
+
+.img1 {
+    grid-column: 1/3;
+}
+
+.img11 {
+    grid-column: 2 / 4;
+    grid-row: 3 /5;
+}
+
+@media screen and (max-width: 780px) { 
+    .conteinerInicio {
+        display: block;
+        margin-top: 25px;
+    }
+
+    .video {
+        width: 480px;
+        height: 320px;
+    }
+
+    .tituloSobreNosotros {
+        font-size: 40px;
+
+    }
+
+    .imgn_titulo {
+        width: 150px;
+        height: 30px;
+    }
+
+    .textoSobreNosotros {
+       
+       margin-top: 5px;
+       padding-top: 5px;
+        
+    }
+
+}
+
+/* Fin pagina de inicio */
+
+
+/* Pagina adoptar */
+.conteinerAdoptar {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.titulosAdoptar {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 23px;
+}
+
+.tituloAdoptar {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.img_titulo {
+    width: 300px;
+    height: 50px;
+}
+
+.cardAdoptar {
+    max-width: 250px;
+    height: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid  rgb(172, 123, 218);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.btnAdoptar {
+    background-color: rgb(172, 123, 218);
+    color: white;
+    font-size: 20px;
+    border-color: rgb(172, 123, 218) ;
+    border-radius: 10%;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 780px) {    
+
+    .conteinerAdoptar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+    }
+
+    .tituloAdoptar {
+        font-size: 15px;
+    }
+
+    .titulosAdoptar {
+        font-size: 17px;
+    }
+
+    .img_titulo {
+        width: 170px;
+        height: 35px;
+    }
+}
+
+
+/* Fin pagina adoptar */
+
+
+/* Pagina transitar */
+
+.Banner {
+
+background-image: url(../imagenes/backgroundTransitar.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 1500px 800px;
+height: 350px;
+color: white;
+font-size: 40px;
+}
+
+.tituloBanner {
+    margin-left: 60px;
+    padding-top: 80px;
+}
+
+.contenidoPrincipal {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.queEsTransitar {
+    font-size: 50px;
+}
+
+.textoTransitar {
+    margin-top: 10px;
+}
+
+
+.transitarF_conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.form_conteiner {
+    display: flex;
+    text-align: center;
+    width: 800px;
+    height: 715px;
+    border: 3px solid rgb(172, 123, 218);
+    background-color: rgb(228, 205, 228);
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.casillasForm {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 370px;
+    height: 45px;
+    outline: none;
+    margin: 10px;
+}
+
+
+.casillasLargas {
+    display: block;
+    border: none;
+}
+
+.casillaLarga {
+    width: 760px;
+    height: 45px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px;
+
+}
+
+.textArea_transitar {
+    width: 760px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.textArea_conteiner {
+    margin: 20px 20px;
+}
+
+.p_formulario {
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.form_preguntas {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.pregunta_textArea {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+@media(max-width:768px) {
+
+.Banner  {
+        background-image: url(../imagenes/backgroundTransitar.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 500px 300px;
+        height: 150px;
+        color: white;
+        font-size: 18px;
+        }
+
+.tituloBanner {
+        margin-left: 25px;
+        padding-top: 28px;
+}
+
+        
+.transitarF_conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.form_conteiner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 430px;
+    height: 700px;
+    border: 3px solid rgb(172, 123, 218);
+    background-color: rgb(228, 205, 228);
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.p_formulario {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.casillasForm {
+    width: 190px;
+}
+
+.casillaLarga {
+    width: 395px;
+}
+
+
+.textArea_transitar {
+    width: 395px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.queEsTransitar {
+    font-size: 40px;
+}
+
+}
+
+
+
+/* Fin pagina transitar */
+
+
+
+
+/* Pagina tienda */
+
+.carousel-inner {
+    max-height: 28rem;
+}
+
+.carousel-descripcion {
+  position: absolute;
+  right: 0;
+  padding-top: 150px;
+  padding-right: 50px;
+  padding-left: 90px;
+  color: #fff;
+
+}
+
+.img_carousel {
+    width: 1370px;
+    height: 500px;
+}
+
+
+#opacidad {
+filter:brightness(0.5);
+}
+
+.tienda_titulo {
+    font-size: 80px;
+}
+
+.texto_carousel {
+    font-size: 20px;
+}
+
+
+.conteinerProductos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.conteiner_titulos {
+    display: block;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+
+} 
+
+.titulo_productos {
+    display: block;
+    justify-content: center;
+    font-size: 60px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.img_titulo{
+    width: 280px;
+    height: 45px;
+}
+
+.img_productos {
+    width:280px;
+    height: 250px;
+}
+
+
+.card {
+    border: rgb(172, 123, 218)  3px solid;
+    margin: 30px;
+}
+
+.btn-color {
+    background-color: rgb(172, 123, 218);
+    color: white;
+    font-size: 20px;
+    border-color: rgb(172, 123, 218) ;
+    border-radius: 5%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.btn-color:hover {
+    background-color: rgb(172, 123, 218);
+    color: white;
+    border-color: rgb(172, 123, 218);
+}
+
+
+
+@media(max-width:768px) {
+
+.conteinerProductos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 65px;
+}
+
+.img_carousel {
+    width: 485px;
+    height: 260px;
+    }
+
+.tienda_titulo {
+    font-size: 40px;
+}
+
+.texto_carousel {
+    font-size: 18px;
+}
+
+.carousel-descripcion {
+    position: absolute;
+    right: 0;
+    padding-top: 65px;
+    padding-right: 50px;
+    padding-left: 40px;
+    color: #fff;
+  }
+
+.titulo_productos {
+    font-size: 50px;
+}
+
+.img_titulo{
+    width: 220px;
+    height: 40px;
+}
+
+
+}
+
+/* Fin pagina tienda */
+
+
+
+/* Donar */
+
+.div_transferencia {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.conteiner_alias {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.div_alias {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 350px;
+    font-size: 30px;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+    background-color: rgb(172, 123, 218);
+    margin-bottom: 30px;
+}
+
+
+.form_donar {
+    display: flex;
+    text-align: center;
+    width: 800px;
+    height: 280px;
+    border: 3px solid rgb(172, 123, 218);
+    background-color: rgb(228, 205, 228);
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+
+@media(max-width:768px) {
+    .div_transferencia {
+    font-size: 35px;
+}
+
+.div_alias {
+    font-size: 25px;
+    width: 310px;
+
+}
+
+.form_donar {
+    width: 430px;
+}
+
+}
+
+
+/* Fin donar */
+
+
+/* Footer */
+
+.conteiner {
+    background-color: rgb(172, 123, 218);
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    
+}
+
+.conteiner_contacto {
+    display: flex;
+    gap: 10px;
+}
+
+
+.footer ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.footer p {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.logofooter {
+    width: 40px;
+    height: 38px;
+}
+
+@media(max-width:768px) {
+
+.conteiner_contacto {
+    display: block;
+}
+
+.logofooter {
+    width: 32px;
+    height: 30px;
+}
+
+.div_contacto {
+    margin-top: 8px;
+}
+
+.footer p {
+    font-size: 18px;
+}
+
+
+}
+
+/* Fin de footer */
+
