@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../CSS/styles.css">
     <title>Adoptar</title>
 </head>
@@ -11,38 +13,41 @@
 
 <!-- Navbar -->
 
-<header>
-
-    <nav class="menu_navbar">
-        <a> 
-            <img class="logo" src="../imagenes/logo.png"alt="">
-        </a>
-
-        <ul class="nav_menu">
-            <li class="item_nav">
-                 <a href="../index.html">Inicio</a>
-            </li> 
-            <li class="item_nav"> 
-                <a href="./adoptar.html">Adoptar</a>
-            </li> 
-            <li class="item_nav"> 
-                <a href="./transitar.html">Transitar</a>
-            </li> 
-            <li class="item_nav"> 
-                <a href="./tienda.html">Tienda</a>
-            </li> 
-            <li class="item_nav"> 
-                <a href="./donar.html">Donar</a></li> 
-            </ul>
-    
-        <div class="menu_responsive">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    
-    </nav>
-    </header>
+<div class="row"  >
+    <div class="col-12 ">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid p-0">
+                  <a  href="#"><img class="logo" src="../imagenes/logo.png" alt=""></a>
+              
+                  <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                   aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-0 px-2">
+                         <li class="nav-item">
+                        <a class="nav-item nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="./adoptar.html">Adoptar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="./transitar.html">Transitar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="./tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link"  href="./donar.html">Donar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+  </div>
 
     
 <!-- Fin de Navbar -->
@@ -50,84 +55,127 @@
 
 <!-- Titulo -->
 <div class="tituloAdoptar">
-    <h1>¡Sumá un integrante a tu familia!</h1>
-    <img class="img_titulo" src="../imagenes/abajodetitulo.jpg"  alt="">
+    <h1 class="animate__animated animate__backInUp">¡Sumá un integrante a tu familia!</h1>
+    <img class="img_titulo animate__animated animate__backInUp" src="../imagenes/abajodetitulo.jpg"  alt="">
+</div>
+<div class="texto_adoptar">
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quisquam ex esse sint deleniti inventore tempore quidem dolorem reiciendis, minus, 
+    magnam aut tempora asperiores incidunt necessitatibus maxime odio voluptatem facilis officiis sapiente. Autem dolore tempora non tenetur eveniet id error fugit 
+    iure fuga ducimus ea laborum iste atque veritatis molestias eaque magnam ratione rerum, est quasi nostrum doloribus voluptates. Laboriosam quas, totam voluptatem dolorum 
+    dignissimos iure! Facere sapiente iusto inventore quod eveniet soluta voluptatem ipsum mollitia officiis amet quasi earum, a accusantium corporis possimus dolore. Error
+     harum iusto eligendi provident earum officiis ipsum similique beatae tempora sint?</p>
 </div>
 <!-- Fin titulo -->
 
 <!-- Cards adopcion perritos -->
 <div class="titulosAdoptar">
-<h2>Nuestros perritos</h2>
+<h2 class="animate__animated animate__backInUp">Nuestros perritos</h2>
 </div>
 <div class="conteinerAdoptar">
-    <div class="cardAdoptar">
-        <img src="../imagenes/cardperro.webp" width="150px" height="100px" alt="">
-        <h4>NOMBRE</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button type="button" class="btnAdoptar">Adoptar</button>
-    </div>
-    <div class="cardAdoptar">
-        <img src="../imagenes/cardperro.webp" width="150px" height="100px" alt="">
-        <h4>NOMBRE</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button type="button" class="btnAdoptar">Adoptar</button>
-    </div>
-    <div class="cardAdoptar">
-        <img src="../imagenes/cardperro.webp" width="150px" height="100px" alt="">
-        <h4>NOMBRE</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button type="button" class="btnAdoptar">Adoptar</button>
-    </div>
-    <div class="cardAdoptar">
-        <img src="../imagenes/cardperro.webp" width="150px" height="100px" alt="">
-        <h4>NOMBRE</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button type="button" class="btnAdoptar">Adoptar</button>
-    </div>
-    <div class="cardAdoptar">
-        <img src="../imagenes/cardperro.webp" width="150px" height="100px" alt="">
-        <h4>NOMBRE</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button type="button" class="btnAdoptar">Adoptar</button>
-    </div>
+    <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/perro1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">SALMA</h5>
+          <p class="card-text d-flex justify-content-center">Hembra, un añito.</p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
+      <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/perro2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">GALA</h5>
+          <p class="card-text d-flex justify-content-center">Hembra, un año y medio.</p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
+      <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/perro3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">JUSTO</h5>
+          <p class="card-text d-flex justify-content-center">Macho, cinco meses. </p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
+      <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/perro4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">BLAS</h5>
+          <p class="card-text d-flex justify-content-center">Macho, dos años.</p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
+      <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/perro5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">PADEL</h5>
+          <p class="card-text d-flex justify-content-center">Macho, año y medio.</p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
+      <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/perro6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">RENÉ</h5>
+          <p class="card-text d-flex justify-content-center">Macho, dos años.</p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
 </div>
 <!-- Fin cards adopcion perritos -->
 
 <!-- Cards adopción gatitos -->
 <div class="titulosAdoptar">
-<h2>Nuestros gatitos</h2>
+<h2 class="animate_animated animate__backInUp">Nuestros gatitos</h2>
 </div>
 <div class="conteinerAdoptar">
-    <div class="cardAdoptar">
-        <img src="../imagenes/cardgatos.webp" width="150px" height="100px" alt="">
-        <h4>NOMBRE</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button type="button" class="btnAdoptar">Adoptar</button>
-    </div>
-    <div class="cardAdoptar">
-        <img src="../imagenes/cardgatos.webp" width="150px" height="100px" alt="">
-        <h4>NOMBRE</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button type="button" class="btnAdoptar">Adoptar</button>
-    </div>
-    <div class="cardAdoptar">
-        <img src="../imagenes/cardgatos.webp" width="150px" height="100px" alt="">
-        <h4>NOMBRE</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button type="button" class="btnAdoptar">Adoptar</button>
-    </div>
-    <div class="cardAdoptar">
-        <img src="../imagenes/cardgatos.webp" width="150px" height="100px" alt="">
-        <h4>NOMBRE</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button type="button" class="btnAdoptar">Adoptar</button>
-    </div>
-    <div class="cardAdoptar">
-        <img src="../imagenes/cardgatos.webp" width="150px" height="100px" alt="">
-        <h4>NOMBRE</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button type="button" class="btnAdoptar">Adoptar</button>
-    </div>
+    <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/gato1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">KENNY</h5>
+          <p class="card-text d-flex justify-content-center">Macho, un año.</p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
+      <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/gato2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">LUCIA</h5>
+          <p class="card-text d-flex justify-content-center">Hembra, tres añitos.</p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
+      <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/gato3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">PRICHU</h5>
+          <p class="card-text d-flex justify-content-center">Hembra, dos años.</p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
+      <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/gato4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">VALU</h5>
+          <p class="card-text d-flex justify-content-center">Macho, un año.</p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
+      <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/gato5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">TAY</h5>
+          <p class="card-text d-flex justify-content-center">Macho, dos años.</p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
+      <div class="cardAdoptar" style="width: 18rem; ">
+        <img src="../imagenes/gato6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex justify-content-center">MILANESA</h5>
+          <p class="card-text d-flex justify-content-center">Hembra, un año y medio.</p>
+          <a href="#" class="btn btn-adoptar d-flex justify-content-center">Adoptar</a>
+        </div>
+      </div>
 </div>
 <!-- Fin cards adopcion gatitos -->
 
@@ -160,5 +208,7 @@
 
 
 <script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </body>
 </html>
